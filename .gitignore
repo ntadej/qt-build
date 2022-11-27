@@ -2,3 +2,15 @@ Makefile
 .qmake.cache
 .qmake.super
 *.pro.user*
+build.ninja
+.ninja_deps
+.ninja_log
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+CTestTestfile.cmake
+QtDeploySupport.cmake
+config.opt
+config.summary
+config.tests/precompile_header/precompile_header
+config.tests/separate_debug_info/objcopytest
