@@ -1,0 +1,37 @@
+#!/bin/bash
+./configure -opensource -confirm-license \
+  -appstore-compliant \
+  -ccache \
+  -prefix /Volumes/Extreme/Workspace/SDK/Source/Qt/6.4.2/macos_static \
+  -release \
+  -static \
+  -no-pch \
+  -nomake tests -nomake examples \
+  -no-sql-mysql -plugin-sql-sqlite \
+  -skip qtactiveqt \
+  -skip qthttpserver \
+  -skip qtmultimedia \
+  -- -DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" \
+  -DFEATURE_androiddeployqt=OFF \
+  -DFEATURE_colordialog=OFF \
+  -DFEATURE_dbus=OFF \
+  -DFEATURE_designer=OFF \
+  -DFEATURE_distancefieldgenerator=OFF \
+  -DFEATURE_filedialog=OFF \
+  -DFEATURE_fontdialog=OFF \
+  -DFEATURE_inputdialog=OFF \
+  -DFEATURE_keysequenceedit=OFF \
+  -DFEATURE_lcdnumber=OFF \
+  -DFEATURE_linguist=OFF \
+  -DFEATURE_pixeltool=OFF \
+  -DFEATURE_printsupport=OFF \
+  -DFEATURE_qdbus=OFF \
+  -DFEATURE_quickcontrols2_fusion=OFF \
+  -DFEATURE_quickcontrols2_imagine=OFF \
+  -DFEATURE_quickcontrols2_ios=OFF \
+  -DFEATURE_quickcontrols2_material=OFF \
+  -DFEATURE_quickcontrols2_universal=OFF \
+  -DFEATURE_quickcontrols2_windows=OFF \
+  -DFEATURE_quicktemplates2_calendar=OFF \
+  -DFEATURE_splashscreen=OFF \
+  -DFEATURE_syntaxhighlighter=OFF
