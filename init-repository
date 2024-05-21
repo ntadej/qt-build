@@ -221,7 +221,7 @@ sub parse_arguments
     # Replace any double trailing slashes from end of mirror
     $self->{'mirror-url'} =~ s{//+$}{/};
 
-    $self->{'module-subset'} =~ s/\bdefault\b/preview,essential,addon,deprecated/;
+    $self->{'module-subset'} =~ s/\bdefault\b/essential/;
     $self->{'module-subset'} = [ split(/,/, $self->{'module-subset'}) ];
 
     $self->{'fetch'} = 0 if (!$self->{'update'});
@@ -635,6 +635,7 @@ sub run
     die("Have no origin remote.\n") if (!$url);
     $url =~ s,\.git/?$,,;
     $url =~ s/((?:tqtc-)?qt5)$//;
+    $url =~ s/qt-build//;
     my $qtrepo = $1 || 'qt5';
     $self->{'base-url'} = $url;
 
