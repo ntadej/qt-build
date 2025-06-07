@@ -8,7 +8,7 @@
 	path = qtsvg
 	url = ../qtsvg.git
 	branch = 6.9.1
-	status = addon
+	status = essential
 [submodule "qtdeclarative"]
 	depends = qtbase
 	recommends = qtimageformats qtshadertools qtsvg qtlanguageserver
@@ -77,14 +77,14 @@
 	path = qtlocation
 	url = ../qtlocation.git
 	branch = 6.9.1
-	status = preview
+	status = essential
 [submodule "qtpositioning"]
 	depends = qtbase
 	recommends = qtdeclarative qtserialport
 	path = qtpositioning
 	url = ../qtpositioning.git
 	branch = 6.9.1
-	status = addon
+	status = essential
 [submodule "qtsensors"]
 	depends = qtbase
 	recommends = qtdeclarative
@@ -138,7 +138,7 @@
 	path = qtimageformats
 	url = ../qtimageformats.git
 	branch = 6.9.1
-	status = addon
+	status = essential
 [submodule "qtserialbus"]
 	depends = qtbase
 	recommends = qtserialport
@@ -272,13 +272,13 @@
 	path = qtshadertools
 	url = ../qtshadertools.git
 	branch = 6.9.1
-	status = addon
+	status = essential
 [submodule "qt5compat"]
 	depends = qtbase qtdeclarative
 	path = qt5compat
 	url = ../qt5compat.git
 	branch = 6.9.1
-	status = deprecated
+	status = essential
 [submodule "qtcoap"]
 	depends = qtbase
 	path = qtcoap
